@@ -1,0 +1,20 @@
+// apply plugin: 'java'
+def dafaq = "suck dick"
+project.ext.wassup = "hakuna matata"
+
+task hello{
+	doLast {
+		println "Hello fuck face - $wassup"
+	}
+}
+
+task Tasktwo{
+	description = "Dafaq?"
+	dependsOn hello
+	doFirst{
+		println "\nfirst"
+	}
+	doLast{
+		println "\nlast"
+	}
+}
